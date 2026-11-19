@@ -1,0 +1,1081 @@
+{
+  "profile": {
+    "name": "高敬义",
+    "nameEn": "Ben Gao",
+    "email": "gjy.18sui@gmail.com",
+    "phone": "17372264057",
+    "location": "中国，江苏常州",
+    "locationEn": "Changzhou, Jiangsu, China",
+    "github": "https://github.com/rx-ted",
+    "avatar": "https://picx.19981204.xyz/rest/z2Oyink.jpeg",
+    "url": "https://about.19981204.xyz/",
+    "ogImage": "/assets/img/og-image.png",
+    "cvFile": "/assets/cv.pdf",
+    "pronouns": "他/him",
+    "pronounsEn": "he/him",
+    "languages": "中文、英语",
+    "languagesEn": "Chinese, English",
+    "social": [
+      {
+        "icon": "github",
+        "label": "GitHub",
+        "url": "https://github.com/rx-ted"
+      }
+    ],
+    "repo": {
+      "label": "View the code on GitHub",
+      "labelZh": "在 GitHub 查看源码",
+      "url": "https://github.com/rx-ted/personal-portfolio"
+    },
+    "community": {
+      "show": false,
+      "label": "Portfolio Community",
+      "url": ""
+    },
+    "theme": {
+      "palette": "slate",
+      "style": "soft",
+      "defaultMode": "auto",
+      "font": "system"
+    },
+    "nav": {
+      "showThemeToggle": true,
+      "showDotRail": true,
+      "commandPalette": true
+    },
+    "contactForm": {
+      "enabled": false,
+      "action": "https://formspree.io/f/your-id"
+    }
+  },
+  "locales": {
+    "zh": {
+      "site": {
+        "title": "高敬义 — 个人作品集",
+        "description": "高敬义的软件工程师个人简历与作品集，包含经历、项目、技能与联系方式。"
+      },
+      "navBrand": "高敬义",
+      "hero": {
+        "statusText": "开放全职 / 远程机会",
+        "statusOpen": true,
+        "eyebrow": "你好，我是",
+        "name": "高敬义",
+        "nameHighlight": "高敬义",
+        "tagline": "软件工程师 / 后端开发工程师。具备后端服务开发、数据采集处理、系统性能优化及 Cloudflare 无服务器应用开发经验，能够独立负责模块与项目落地。",
+        "typewriter": false,
+        "primaryCta": {
+          "label": "查看项目",
+          "href": "#projects"
+        },
+        "secondaryCta": {
+          "label": "关于我",
+          "href": "#about"
+        },
+        "cv": {
+          "show": true,
+          "label": "下载简历",
+          "file": "/assets/cv.pdf"
+        },
+        "glanceTitle": "快速了解",
+        "glance": [
+          {
+            "icon": "map-pin",
+            "label": "所在地",
+            "value": "江苏常州",
+            "href": "#about"
+          },
+          {
+            "icon": "briefcase",
+            "label": "求职意向",
+            "value": "软件工程师 / 后端开发",
+            "href": "#about"
+          },
+          {
+            "icon": "wrench",
+            "label": "方向",
+            "value": "后端 / 云原生 / 全栈",
+            "href": "#skills"
+          },
+          {
+            "icon": "folder",
+            "label": "项目",
+            "value": "个人与开源项目",
+            "href": "#projects"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "id": "about",
+          "nav": "关于",
+          "show": true
+        },
+        {
+          "id": "now",
+          "nav": "近况",
+          "show": true
+        },
+        {
+          "id": "stats",
+          "nav": "亮点",
+          "show": false
+        },
+        {
+          "id": "experience",
+          "nav": "经历",
+          "show": true
+        },
+        {
+          "id": "education",
+          "nav": "教育",
+          "show": true
+        },
+        {
+          "id": "skills",
+          "nav": "技能",
+          "show": true
+        },
+        {
+          "id": "projects",
+          "nav": "项目",
+          "show": true
+        },
+        {
+          "id": "gallery",
+          "nav": "相册",
+          "show": false
+        },
+        {
+          "id": "writing",
+          "nav": "写作",
+          "show": true
+        },
+        {
+          "id": "testimonials",
+          "nav": "推荐",
+          "show": false
+        },
+        {
+          "id": "contact",
+          "nav": "联系",
+          "show": true
+        }
+      ],
+      "about": {
+        "intro": "个人简介",
+        "photo": "https://picx.19981204.xyz/rest/z2Oyink.jpeg",
+        "photoAlt": "高敬义的照片",
+        "paragraphs": [
+          "具备扎实的计算机专业基础与丰富的软件开发实践经验，熟悉从需求分析、系统设计、开发实现到测试部署的完整流程。",
+          "具备后端服务开发、数据采集处理、系统性能优化及 Cloudflare 无服务器应用开发经验，能够独立负责模块与项目落地。",
+          "注重代码质量与工程规范，具备良好的学习能力、问题解决能力与团队协作意识。"
+        ],
+        "interests": [
+          "后端开发",
+          "Cloudflare",
+          "数据处理",
+          "全栈开发",
+          "开源项目"
+        ],
+        "quickFacts": [
+          {
+            "label": "姓名",
+            "value": "高敬义"
+          },
+          {
+            "label": "学历",
+            "value": "计算机科学与技术（工学学士）"
+          },
+          {
+            "label": "所在地",
+            "value": "江苏常州"
+          },
+          {
+            "label": "求职意向",
+            "value": "软件工程师 / 后端开发工程师"
+          },
+          {
+            "label": "到岗时间",
+            "value": "录取通知后两周内"
+          },
+          {
+            "label": "邮箱",
+            "value": "gjy.18sui@gmail.com"
+          }
+        ]
+      },
+      "now": {
+        "intro": "我最近在做的事",
+        "items": [
+          {
+            "icon": "folder",
+            "text": "持续开发个人产品与开源项目，涵盖 Web 全栈、后端架构与 Cloudflare 无服务器部署。"
+          },
+          {
+            "icon": "wrench",
+            "text": "建设个人作品集网站、博客系统、图床平台及可复用 TypeScript 基础库。"
+          },
+          {
+            "icon": "user",
+            "text": "寻找软件工程师 / 后端开发相关的全职或远程机会。"
+          }
+        ]
+      },
+      "experience": {
+        "intro": "工作经历",
+        "items": [
+          {
+            "title": "独立开发者｜个人产品与开源项目",
+            "org": "个人项目",
+            "dates": "2026.01 – 至今",
+            "logo": "",
+            "bullets": [
+              "持续进行个人产品与开源项目开发，涵盖 Web 全栈开发、后端架构设计、Cloudflare 无服务器部署及开发基础设施建设。",
+              "独立负责需求分析、技术选型、系统设计、开发与部署，建设个人作品集网站、博客系统、图床平台及可复用 TypeScript 基础库。"
+            ]
+          },
+          {
+            "title": "远程软件工程师",
+            "org": "Airslope, LLC",
+            "dates": "2025.08 – 2026.01",
+            "logo": "",
+            "bullets": [
+              "独立负责美国政府公开数据采集与处理系统从 0 到 1 的架构设计与实现，涵盖任务调度、数据处理、存储架构及测试保障。",
+              "完整参与项目全生命周期，实现全量与增量数据抓取、失败重试、数据存储与持续更新能力。"
+            ]
+          },
+          {
+            "title": "软件工程师（Research）",
+            "org": "谷歌上海",
+            "dates": "2023.07 – 2024.08",
+            "logo": "",
+            "bullets": [
+              "参与公司内部软件项目的开发与维护，保障项目按时交付。",
+              "与团队协作解决日常开发中的技术问题，推动项目进展。",
+              "主动识别并解决用户痛点，提出并实施多项功能改进，提升产品功能与用户体验。"
+            ]
+          },
+          {
+            "title": "物料协调",
+            "org": "伟创力",
+            "dates": "2022.06 – 2023.06",
+            "logo": "",
+            "bullets": [
+              "负责物料协调、调账、报废、报表及库存分析，能够使用 Python 辅助处理数据。",
+              "负责物料管理数据的处理与维护，定期分析报表并支持经营管理决策。",
+              "参与月末盘点及相关协调沟通工作，熟练使用办公软件。"
+            ]
+          }
+        ]
+      },
+      "education": {
+        "intro": "教育经历",
+        "items": [
+          {
+            "title": "计算机科学与技术｜本科（工学学士）",
+            "org": "北京联合大学",
+            "dates": "2018.09 – 2022.07",
+            "logo": "",
+            "bullets": [
+              "专业排名前五，多次获得奖学金二等奖、三等奖。",
+              "2021 年 6 月获得 CET-4 证书。",
+              "2022 年被评为北京优秀大学生。"
+            ]
+          }
+        ]
+      },
+      "skills": {
+        "intro": "专业技能",
+        "groups": [
+          {
+            "name": "编程语言",
+            "items": [
+              "C/C++",
+              "TypeScript",
+              "Python",
+              "Java",
+              "JavaScript"
+            ]
+          },
+          {
+            "name": "后端开发",
+            "items": [
+              "Node.js",
+              "Spring Boot",
+              "RESTful API",
+              "MyBatis-Plus",
+              "Spring Security",
+              "JWT",
+              "Swagger"
+            ]
+          },
+          {
+            "name": "数据与中间件",
+            "items": [
+              "MySQL",
+              "Redis",
+              "RabbitMQ",
+              "OpenSearch"
+            ]
+          },
+          {
+            "name": "Web 与云原生",
+            "items": [
+              "Next.js",
+              "React",
+              "Astro",
+              "Tailwind CSS",
+              "Cloudflare Workers",
+              "D1",
+              "R2",
+              "KV",
+              "Pages"
+            ]
+          },
+          {
+            "name": "工程能力",
+            "items": [
+              "软件开发流程",
+              "设计模式",
+              "Jest/Vitest",
+              "文档编写",
+              "问题排查"
+            ]
+          },
+          {
+            "name": "其他",
+            "items": [
+              "AWS S3",
+              "Axios",
+              "Cheerio",
+              "ProtoBuf"
+            ]
+          }
+        ]
+      },
+      "projects": {
+        "filters": true,
+        "intro": "项目经历",
+        "items": [
+          {
+            "featured": true,
+            "title": "PicX — 图片资源管理平台",
+            "description": "基于 Cloudflare 无服务器架构的图片资源管理平台，实现图片上传、对象存储及图片处理，并集成 Google/GitHub OAuth 登录。",
+            "image": "https://picx.19981204.xyz/rest/2026/11/9FgM8nk.png",
+            "tags": [
+              "TypeScript",
+              "Cloudflare Workers",
+              "R2",
+              "OAuth"
+            ],
+            "links": [
+              {
+                "type": "demo",
+                "label": "访问项目",
+                "url": "https://picx.19981204.xyz"
+              }
+            ]
+          },
+          {
+            "featured": true,
+            "title": "Blog — 开源个人博客与知识管理系统",
+            "description": "面向个人写作与知识沉淀的开源博客系统，支持 Markdown 管理、双编辑模式、AI 写作辅助、主题与发布管理，部署于 Cloudflare 无服务器体系。",
+            "image": "https://picx.19981204.xyz/rest/2026/11/DUSM8nk.png",
+            "tags": [
+              "Next.js",
+              "TypeScript",
+              "Cloudflare",
+              "D1",
+              "R2",
+              "KV"
+            ],
+            "links": [
+              {
+                "type": "demo",
+                "label": "访问博客",
+                "url": "https://blog.19981204.xyz"
+              },
+              {
+                "type": "source",
+                "label": "前身项目",
+                "url": "https://rx-ted.github.io/blog"
+              }
+            ]
+          },
+          {
+            "featured": true,
+            "title": "Portfolio — 个人作品集网站",
+            "description": "参考开源 Portfolio Starter Kit，将基于 HTML/CSS/JavaScript 的个人主页重构为 Astro + TypeScript 项目，部署于 Cloudflare Pages。",
+            "image": "/assets/img/project-3.svg",
+            "tags": [
+              "Astro",
+              "TypeScript",
+              "Cloudflare Pages"
+            ],
+            "links": [
+              {
+                "type": "demo",
+                "label": "访问网站",
+                "url": "https://about.19981204.xyz"
+              }
+            ]
+          },
+          {
+            "featured": false,
+            "title": "美国政府产品召回数据采集与处理系统（Recall Crawler）",
+            "description": "独立设计并开发的数据采集与处理系统，支持全量与每日增量抓取、任务调度、失败重试与测试保障，实现 3–4 万条数据采集及每日 10–20 条持续更新。",
+            "image": "https://picx.19981204.xyz/rest/M5gn8nk.png",
+            "tags": [
+              "Node.js",
+              "TypeScript",
+              "MySQL",
+              "AWS S3",
+              "Jest"
+            ],
+            "links": []
+          },
+          {
+            "featured": false,
+            "title": "博客系统后端开发（Java）",
+            "description": "基于 Spring Boot 等技术栈快速搭建的博客后端，涵盖认证、文章管理、评论、搜索、缓存优化、异步消息处理与权限控制。",
+            "image": "https://picx.19981204.xyz/rest/n65O8nk.png",
+            "tags": [
+              "Java",
+              "Spring Boot",
+              "MySQL",
+              "Redis",
+              "RabbitMQ"
+            ],
+            "links": []
+          },
+          {
+            "featured": false,
+            "title": "系统性能优化与用户体验提升（内部项目）",
+            "description": "参与公司内部系统性能优化：C++ 优化图结构与算法提升响应约 10%+；Python 优化查询与缓存降低 10PB+ 数据访问延迟数百毫秒；TypeScript 优化交互并完善文档缩短新用户上手时间约 20%。",
+            "image": "https://picx.19981204.xyz/rest/LrrO8nk.png",
+            "tags": [
+              "C++",
+              "Python",
+              "TypeScript",
+              "ProtoBuf"
+            ],
+            "links": []
+          }
+        ]
+      },
+      "writing": {
+        "intro": "写作与链接",
+        "items": [
+          {
+            "title": "个人博客",
+            "date": "2026-01-01",
+            "blurb": "记录技术实践、项目经验与学习笔记。",
+            "url": "https://blog.19981204.xyz"
+          },
+          {
+            "title": "GitHub",
+            "date": "2026-01-01",
+            "blurb": "开源项目与代码仓库。",
+            "url": "https://github.com/rx-ted"
+          }
+        ]
+      },
+      "contact": {
+        "intro": "联系方式",
+        "heading": "保持联系",
+        "text": "欢迎通过邮件联系我，沟通全职/远程工作机会、项目合作或技术交流。",
+        "emailButtonLabel": "发送邮件"
+      },
+      "footer": {
+        "tagline": "感谢你的来访。",
+        "showCredit": true
+      },
+      "ui": {
+        "locale": "zh-CN",
+        "skipToContent": "跳转到主要内容",
+        "navAria": "主导航",
+        "sectionsAria": "页面区块",
+        "sectionNavAria": "区块导航",
+        "scroll": "向下滚动",
+        "readMore": "阅读更多",
+        "openMenu": "打开菜单",
+        "closeMenu": "关闭菜单",
+        "toggleDark": "切换深色模式",
+        "switchToLight": "切换到浅色模式",
+        "switchToDark": "切换到深色模式",
+        "searchQuickActions": "搜索与快捷操作",
+        "searchTitle": "搜索 (Ctrl / ⌘ + K)",
+        "copyEmail": "复制邮箱",
+        "copyEmailAria": "复制邮箱地址到剪贴板",
+        "copied": "已复制！",
+        "emailCopied": "邮箱地址已复制",
+        "sendMessage": "发送消息",
+        "sending": "发送中…",
+        "all": "全部",
+        "filterProjectsAria": "按标签筛选项目",
+        "formName": "姓名",
+        "formEmail": "邮箱",
+        "formMessage": "留言内容",
+        "formHoneypot": "请勿填写此字段",
+        "formThanksTitle": "谢谢！",
+        "formThanksText": "你的消息已发送，我会尽快回复你。",
+        "formError": "发送失败，请稍后再试，或直接给我发邮件。",
+        "formNetworkError": "网络错误，请检查连接后重试，或直接给我发邮件。",
+        "openPhoto": "打开图片",
+        "galleryPhoto": "相册图片",
+        "imageViewer": "图片查看器",
+        "closeImageViewer": "关闭图片查看器",
+        "prevPhoto": "上一张",
+        "nextPhoto": "下一张",
+        "backToTop": "返回顶部",
+        "cmdkPlaceholder": "搜索区块、主题、链接…",
+        "cmdkEsc": "Esc",
+        "cmdkFootNav": "导航",
+        "cmdkFootSelect": "选择",
+        "cmdkFootClose": "关闭",
+        "cmdkNoMatches": "没有匹配结果 — 试试“关于”、“深色”或“邮箱”。",
+        "cmdkGroupGoTo": "跳转",
+        "cmdkGroupTheme": "主题",
+        "cmdkGroupActions": "操作",
+        "cmdkGroupLinks": "链接",
+        "cmdkTop": "返回顶部（页面）",
+        "cmdkToggleTheme": "切换浅色 / 深色模式",
+        "cmdkAccent": "强调色",
+        "cmdkStyle": "布局风格",
+        "cmdkStyleSoft": "柔和（圆角）",
+        "cmdkStyleFlat": "扁平（编辑感）",
+        "cmdkCopyEmail": "复制邮箱地址",
+        "cmdkSendEmail": "发送邮件",
+        "cmdkOpen": "打开",
+        "toastAccent": "强调色：",
+        "toastStyle": "布局风格：",
+        "switchLanguage": "切换语言",
+        "settings": "设置",
+        "settingsPanelAria": "设置面板",
+        "close": "关闭",
+        "colourTheme": "配色主题",
+        "layoutStyle": "布局风格",
+        "exportPdfPreview": "导出 PDF 预览",
+        "downloadPdf": "下载 PDF",
+        "guideAria": "开始使用",
+        "guideCloseAria": "隐藏此入门提示",
+        "styleSoftLabel": "柔和",
+        "styleFlatLabel": "扁平"
+      }
+    },
+    "en": {
+      "site": {
+        "title": "Ben Gao — Portfolio",
+        "description": "Software engineer portfolio of Ben Gao: experience, projects, skills, and contact information."
+      },
+      "navBrand": "Ben Gao",
+      "hero": {
+        "statusText": "Open to full-time / remote opportunities",
+        "statusOpen": true,
+        "eyebrow": "Hi, my name is",
+        "name": "Ben Gao",
+        "nameHighlight": "Ben Gao",
+        "tagline": "Software Engineer / Backend Developer with experience in backend services, data collection and processing, performance optimization, and Cloudflare serverless applications.",
+        "typewriter": false,
+        "primaryCta": {
+          "label": "View projects",
+          "href": "#projects"
+        },
+        "secondaryCta": {
+          "label": "About me",
+          "href": "#about"
+        },
+        "cv": {
+          "show": true,
+          "label": "Download CV",
+          "file": "/assets/cv.pdf"
+        },
+        "glanceTitle": "At a glance",
+        "glance": [
+          {
+            "icon": "map-pin",
+            "label": "Based in",
+            "value": "Changzhou, Jiangsu, China",
+            "href": "#about"
+          },
+          {
+            "icon": "briefcase",
+            "label": "Target role",
+            "value": "Software / Backend Engineer",
+            "href": "#about"
+          },
+          {
+            "icon": "wrench",
+            "label": "Focus",
+            "value": "Backend / Cloud / Full-stack",
+            "href": "#skills"
+          },
+          {
+            "icon": "folder",
+            "label": "Projects",
+            "value": "Personal & open-source work",
+            "href": "#projects"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "id": "about",
+          "nav": "About",
+          "show": true
+        },
+        {
+          "id": "now",
+          "nav": "Now",
+          "show": true
+        },
+        {
+          "id": "stats",
+          "nav": "Highlights",
+          "show": false
+        },
+        {
+          "id": "experience",
+          "nav": "Experience",
+          "show": true
+        },
+        {
+          "id": "education",
+          "nav": "Education",
+          "show": true
+        },
+        {
+          "id": "skills",
+          "nav": "Skills",
+          "show": true
+        },
+        {
+          "id": "projects",
+          "nav": "Projects",
+          "show": true
+        },
+        {
+          "id": "gallery",
+          "nav": "Gallery",
+          "show": false
+        },
+        {
+          "id": "writing",
+          "nav": "Writing",
+          "show": true
+        },
+        {
+          "id": "testimonials",
+          "nav": "References",
+          "show": false
+        },
+        {
+          "id": "contact",
+          "nav": "Contact",
+          "show": true
+        }
+      ],
+      "about": {
+        "intro": "About me",
+        "photo": "https://picx.19981204.xyz/rest/z2Oyink.jpeg",
+        "photoAlt": "Photo of Ben Gao",
+        "paragraphs": [
+          "I have a solid foundation in computer science and practical software development experience across the full lifecycle from requirements analysis and system design to implementation, testing, and deployment.",
+          "My experience includes backend service development, data collection and processing, performance optimization, and building serverless applications on Cloudflare. I can independently deliver modules and projects end-to-end.",
+          "I value code quality and engineering practices, and bring strong learning ability, problem-solving skills, and collaboration."
+        ],
+        "interests": [
+          "Backend development",
+          "Cloudflare",
+          "Data processing",
+          "Full-stack development",
+          "Open source"
+        ],
+        "quickFacts": [
+          {
+            "label": "Name",
+            "value": "Ben Gao (高敬义)"
+          },
+          {
+            "label": "Degree",
+            "value": "B.Eng. in Computer Science and Technology"
+          },
+          {
+            "label": "Location",
+            "value": "Changzhou, Jiangsu, China"
+          },
+          {
+            "label": "Target role",
+            "value": "Software Engineer / Backend Developer"
+          },
+          {
+            "label": "Availability",
+            "value": "Within two weeks after offer"
+          },
+          {
+            "label": "Email",
+            "value": "gjy.18sui@gmail.com"
+          }
+        ]
+      },
+      "now": {
+        "intro": "What I'm doing now",
+        "items": [
+          {
+            "icon": "folder",
+            "text": "Building personal and open-source products across web full-stack, backend architecture, and Cloudflare serverless deployments."
+          },
+          {
+            "icon": "wrench",
+            "text": "Developing a portfolio site, blog system, image hosting platform, and reusable TypeScript libraries."
+          },
+          {
+            "icon": "user",
+            "text": "Seeking full-time or remote software/backend engineering opportunities."
+          }
+        ]
+      },
+      "experience": {
+        "intro": "Work experience",
+        "items": [
+          {
+            "title": "Independent Developer — Personal & Open-source Projects",
+            "org": "Personal",
+            "dates": "2026.01 – Present",
+            "logo": "",
+            "bullets": [
+              "Continuously building personal and open-source projects covering web full-stack development, backend architecture, Cloudflare serverless deployment, and developer infrastructure.",
+              "Independently handled requirements, technical decisions, system design, development, and deployment for a portfolio site, blog system, image hosting platform, and reusable TypeScript libraries."
+            ]
+          },
+          {
+            "title": "Remote Software Engineer",
+            "org": "Airslope, LLC",
+            "dates": "2025.08 – 2026.01",
+            "logo": "",
+            "bullets": [
+              "Designed and implemented a U.S. government public recall data collection and processing system from scratch, including scheduling, processing, storage architecture, and testing.",
+              "Owned the full lifecycle and delivered full/incremental crawling, retries, storage, and continuous updates."
+            ]
+          },
+          {
+            "title": "Software Engineer (Research)",
+            "org": "Google Shanghai",
+            "dates": "2023.07 – 2024.08",
+            "logo": "",
+            "bullets": [
+              "Contributed to development and maintenance of internal software projects, ensuring on-time delivery.",
+              "Collaborated with the team to resolve technical issues and move projects forward.",
+              "Proactively identified user pain points and implemented improvements to enhance functionality and user experience."
+            ]
+          },
+          {
+            "title": "Materials Coordinator",
+            "org": "Flex (Suzhou)",
+            "dates": "2022.06 – 2023.06",
+            "logo": "",
+            "bullets": [
+              "Handled material coordination, adjustments, scrapping, reporting, and inventory analysis, using Python to assist with data processing.",
+              "Maintained material management data, produced regular reports, and supported operational decisions.",
+              "Participated in month-end inventory and coordination; proficient with office software."
+            ]
+          }
+        ]
+      },
+      "education": {
+        "intro": "Education",
+        "items": [
+          {
+            "title": "B.Eng. in Computer Science and Technology",
+            "org": "Beijing Union University",
+            "dates": "2018.09 – 2022.07",
+            "logo": "",
+            "bullets": [
+              "Ranked top 5 in major; received multiple second- and third-class scholarships.",
+              "Obtained CET-4 certificate (2021.06).",
+              "Recognized as an Outstanding College Student of Beijing (2022)."
+            ]
+          }
+        ]
+      },
+      "skills": {
+        "intro": "Skills",
+        "groups": [
+          {
+            "name": "Programming Languages",
+            "items": [
+              "C/C++",
+              "TypeScript",
+              "Python",
+              "Java",
+              "JavaScript"
+            ]
+          },
+          {
+            "name": "Backend",
+            "items": [
+              "Node.js",
+              "Spring Boot",
+              "RESTful APIs",
+              "MyBatis-Plus",
+              "Spring Security",
+              "JWT",
+              "Swagger"
+            ]
+          },
+          {
+            "name": "Data & Middleware",
+            "items": [
+              "MySQL",
+              "Redis",
+              "RabbitMQ",
+              "OpenSearch"
+            ]
+          },
+          {
+            "name": "Web & Cloud",
+            "items": [
+              "Next.js",
+              "React",
+              "Astro",
+              "Tailwind CSS",
+              "Cloudflare Workers",
+              "D1",
+              "R2",
+              "KV",
+              "Pages"
+            ]
+          },
+          {
+            "name": "Engineering",
+            "items": [
+              "SDLC",
+              "Design patterns",
+              "Jest/Vitest",
+              "Documentation",
+              "Troubleshooting"
+            ]
+          },
+          {
+            "name": "Other",
+            "items": [
+              "AWS S3",
+              "Axios",
+              "Cheerio",
+              "ProtoBuf"
+            ]
+          }
+        ]
+      },
+      "projects": {
+        "filters": true,
+        "intro": "Projects",
+        "items": [
+          {
+            "featured": true,
+            "title": "PicX — Image Asset Management Platform",
+            "description": "A serverless image management platform on Cloudflare with upload/storage/processing and Google/GitHub OAuth login.",
+            "image": "https://picx.19981204.xyz/rest/2026/11/9FgM8nk.png",
+            "tags": [
+              "TypeScript",
+              "Cloudflare Workers",
+              "R2",
+              "OAuth"
+            ],
+            "links": [
+              {
+                "type": "demo",
+                "label": "Visit",
+                "url": "https://picx.19981204.xyz"
+              }
+            ]
+          },
+          {
+            "featured": true,
+            "title": "Blog — Open-source Blog & Knowledge System",
+            "description": "An open-source blog/knowledge system with Markdown management, dual editing modes, AI writing assistance, and publishing on Cloudflare serverless stack.",
+            "image": "https://picx.19981204.xyz/rest/2026/11/DUSM8nk.png",
+            "tags": [
+              "Next.js",
+              "TypeScript",
+              "Cloudflare",
+              "D1",
+              "R2",
+              "KV"
+            ],
+            "links": [
+              {
+                "type": "demo",
+                "label": "Visit blog",
+                "url": "https://blog.19981204.xyz"
+              },
+              {
+                "type": "source",
+                "label": "Previous version",
+                "url": "https://rx-ted.github.io/blog"
+              }
+            ]
+          },
+          {
+            "featured": true,
+            "title": "Portfolio — Personal Website",
+            "description": "Personal portfolio rebuilt from HTML/CSS/JS into an Astro + TypeScript project, deployed on Cloudflare Pages.",
+            "image": "/assets/img/project-3.svg",
+            "tags": [
+              "Astro",
+              "TypeScript",
+              "Cloudflare Pages"
+            ],
+            "links": [
+              {
+                "type": "demo",
+                "label": "Visit site",
+                "url": "https://about.19981204.xyz"
+              }
+            ]
+          },
+          {
+            "featured": false,
+            "title": "U.S. Government Recall Data Crawler & Processing System",
+            "description": "Independently designed data collection/processing system with full and daily incremental crawling, scheduling, retries, and tests; collected ~30k–40k records with 10–20 daily updates.",
+            "image": "https://picx.19981204.xyz/rest/M5gn8nk.png",
+            "tags": [
+              "Node.js",
+              "TypeScript",
+              "MySQL",
+              "AWS S3",
+              "Jest"
+            ],
+            "links": []
+          },
+          {
+            "featured": false,
+            "title": "Blog Backend (Java)",
+            "description": "Spring Boot-based backend with auth, article/comment management, search, caching, async messaging, and access control.",
+            "image": "/assets/img/project-2.svg",
+            "tags": [
+              "Java",
+              "Spring Boot",
+              "MySQL",
+              "Redis",
+              "RabbitMQ"
+            ],
+            "links": []
+          },
+          {
+            "featured": false,
+            "title": "System Performance Optimization (Internal Project)",
+            "description": "Optimized internal systems: C++ graph/algorithm improvements (~10%+ response gain), Python query/cache tuning (hundreds of ms lower latency on 10PB+ data access), and TypeScript UX/docs improvements (~20% faster onboarding).",
+            "image": "https://picx.19981204.xyz/rest/LrrO8nk.png",
+            "tags": [
+              "C++",
+              "Python",
+              "TypeScript",
+              "ProtoBuf"
+            ],
+            "links": []
+          }
+        ]
+      },
+      "writing": {
+        "intro": "Writing & links",
+        "items": [
+          {
+            "title": "Personal Blog",
+            "date": "2026-01-01",
+            "blurb": "Technical practice, project experience, and learning notes.",
+            "url": "https://blog.19981204.xyz"
+          },
+          {
+            "title": "GitHub",
+            "date": "2026-01-01",
+            "blurb": "Open-source projects and repositories.",
+            "url": "https://github.com/rx-ted"
+          }
+        ]
+      },
+      "contact": {
+        "intro": "Contact",
+        "heading": "Let's connect",
+        "text": "Feel free to reach out about full-time/remote opportunities, collaboration, or technical discussion.",
+        "emailButtonLabel": "Send email"
+      },
+      "footer": {
+        "tagline": "Thanks for visiting.",
+        "showCredit": true
+      },
+      "ui": {
+        "locale": "en",
+        "skipToContent": "Skip to content",
+        "navAria": "Primary",
+        "sectionsAria": "Sections",
+        "sectionNavAria": "Section navigation",
+        "scroll": "Scroll",
+        "readMore": "Read more",
+        "openMenu": "Open menu",
+        "closeMenu": "Close menu",
+        "toggleDark": "Toggle dark mode",
+        "switchToLight": "Switch to light mode",
+        "switchToDark": "Switch to dark mode",
+        "searchQuickActions": "Search and quick actions",
+        "searchTitle": "Search  (Ctrl / ⌘ + K)",
+        "copyEmail": "Copy email",
+        "copyEmailAria": "Copy email address to clipboard",
+        "copied": "Copied!",
+        "emailCopied": "Email address copied",
+        "sendMessage": "Send message",
+        "sending": "Sending…",
+        "all": "All",
+        "filterProjectsAria": "Filter projects by tag",
+        "formName": "Name",
+        "formEmail": "Email",
+        "formMessage": "Message",
+        "formHoneypot": "Leave this field empty",
+        "formThanksTitle": "Thank you!",
+        "formThanksText": "Your message is on its way — I'll get back to you soon.",
+        "formError": "Something went wrong — please try again, or email me directly.",
+        "formNetworkError": "Network error — please check your connection, or email me directly.",
+        "openPhoto": "Open photo",
+        "galleryPhoto": "Gallery photo",
+        "imageViewer": "Image viewer",
+        "closeImageViewer": "Close image viewer",
+        "prevPhoto": "Previous photo",
+        "nextPhoto": "Next photo",
+        "backToTop": "Back to top",
+        "cmdkPlaceholder": "Search sections, theme, links…",
+        "cmdkEsc": "Esc",
+        "cmdkFootNav": "navigate",
+        "cmdkFootSelect": "select",
+        "cmdkFootClose": "close",
+        "cmdkNoMatches": "No matches — try “about”, “dark”, or “email”.",
+        "cmdkGroupGoTo": "Go to",
+        "cmdkGroupTheme": "Theme",
+        "cmdkGroupActions": "Actions",
+        "cmdkGroupLinks": "Links",
+        "cmdkTop": "Top of page",
+        "cmdkToggleTheme": "Toggle light / dark mode",
+        "cmdkAccent": "Accent colour",
+        "cmdkStyle": "Layout style",
+        "cmdkStyleSoft": "Soft (rounded)",
+        "cmdkStyleFlat": "Flat (editorial)",
+        "cmdkCopyEmail": "Copy email address",
+        "cmdkSendEmail": "Send an email",
+        "cmdkOpen": "Open",
+        "toastAccent": "Accent colour:",
+        "toastStyle": "Layout style:",
+        "switchLanguage": "Switch language",
+        "settings": "Settings",
+        "settingsPanelAria": "Settings panel",
+        "close": "Close",
+        "colourTheme": "Colour theme",
+        "layoutStyle": "Layout style",
+        "exportPdfPreview": "Export PDF preview",
+        "downloadPdf": "Download PDF",
+        "guideAria": "Getting started",
+        "guideCloseAria": "Hide this getting-started note",
+        "styleSoftLabel": "Soft",
+        "styleFlatLabel": "Flat"
+      }
+    }
+  }
+}

@@ -1,21 +1,23 @@
-# This is a plain static site — there's almost nothing to ignore.
-# These entries just keep junk out of your repo if you add tools later.
+# build output
+dist/
+# generated types
+.astro/
 
-# Secrets — NEVER commit these (see GROWING.md "Sensitive info & secrets")
-.env
-.env.*
-!.env.example
-
-# Operating system clutter
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Editor folders
-.vscode/
-.idea/
-
-# Logs & dependency folders (only appear if you add build tools later)
+# dependencies
 node_modules/
+
+# logs
 npm-debug.log*
-*.log
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
+
+# jetbrains setting folder
+.idea/

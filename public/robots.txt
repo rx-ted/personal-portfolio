@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # 👉 EDIT — change this to your real address once your site is live.
-Sitemap: https://christian-y-wu.github.io/portfolio-starter-kit/sitemap.xml
+Sitemap: https://about.19981204.xyz/sitemap.xml

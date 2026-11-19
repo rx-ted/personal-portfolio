@@ -1,0 +1,7 @@
+---
+import OriginalLayout from '../layouts/OriginalLayout.astro';
+import { getSiteData } from '../site';
+
+const site = getSiteData('en');
+---
+<OriginalLayout locale="en" site={site} />

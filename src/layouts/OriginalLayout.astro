@@ -1,0 +1,102 @@
+---
+import type { Locale } from '../site';
+
+interface Props {
+  locale: Locale;
+  site: any;
+}
+
+const { locale, site } = Astro.props;
+const ui = site.ui || {};
+const s = site.site || {};
+const title = s.title || '';
+const description = s.description || '';
+const url = s.url || '';
+const ogImage = s.ogImage || '/assets/img/og-image.png';
+const canonical = url || '/';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: site.hero?.name || site.nav?.brand || '',
+  url: url || undefined,
+  sameAs: (site.social || [])
+    .filter((x: any) => x && x.url && /^https?:\/\//i.test(x.url))
+    .map((x: any) => x.url),
+};
+const siteJson = JSON.stringify(site).replace(/</g, '\\u003c');
+const lang = locale === 'zh' ? 'zh-CN' : 'en';
+const skipText = ui.skipToContent || 'Skip to content';
+const backToTopLabel = ui.backToTop || 'Back to top';
+const navAria = ui.navAria || 'Primary';
+const sectionNavAria = ui.sectionNavAria || 'Section navigation';
+const palette = site.theme?.palette || 'slate';
+const style = site.theme?.style || 'soft';
+---
+<!DOCTYPE html>
+<html lang={lang} data-palette={palette} data-style={style}>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; media-src 'self' https:; font-src 'self' https:; style-src 'self' 'unsafe-inline' https:; script-src 'self' 'unsafe-inline' https:; connect-src 'self' https:; frame-src 'self' https:; form-action 'self' https:; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="color-scheme" content="light dark" />
+
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <link rel="alternate" hreflang="en" href="/" />
+  <link rel="alternate" hreflang="zh-CN" href="/zh/" />
+  <link rel="alternate" hreflang="x-default" href="/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={url} />
+  <meta property="og:image" content={ogImage} />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/img/icon-192.svg" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
+
+  <script is:inline>
+    (function () {
+      var el = document.documentElement;
+      try {
+        var saved = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        el.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        var p = localStorage.getItem("palette");
+        if (["slate","forest","sunset","violet","rose","ocean","mono"].indexOf(p) > -1) el.setAttribute("data-palette", p);
+        var s = localStorage.getItem("style");
+        if (["soft","flat"].indexOf(s) > -1) el.setAttribute("data-style", s);
+      } catch (e) { }
+    })();
+  </script>
+
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">{skipText}</a>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <header id="navbar" class="navbar" aria-label={navAria}></header>
+  <nav id="dot-rail" class="dot-rail" aria-label={sectionNavAria} hidden></nav>
+  <main id="content"></main>
+  <footer id="site-footer" class="footer"></footer>
+  <button id="back-to-top" class="back-to-top" type="button" aria-label={backToTopLabel} hidden></button>
+
+  <script is:inline set:html={`window.SITE = ${siteJson};`}></script>
+  <script>
+    import "../scripts/main";
+  </script>
+</body>
+</html>

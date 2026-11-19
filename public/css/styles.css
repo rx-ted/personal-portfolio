@@ -868,6 +868,81 @@ textarea:focus-visible, [tabindex]:focus-visible {
 .contact-form__done-icon svg { width: 1.2rem; height: 1.2rem; }
 
 /* =====================================================================
+   21b. SETTINGS FAB & PANEL  (replaces the old start guide)
+   ===================================================================== */
+.settings-wrap { position: fixed; right: 1.2rem; bottom: 4.6rem; z-index: 95; }
+.settings-fab {
+  width: 2.8rem; height: 2.8rem; border-radius: 999px; border: none; cursor: pointer;
+  background: var(--accent); color: var(--on-accent);
+  box-shadow: var(--shadow-md); display: grid; place-items: center;
+  transition: transform 0.15s var(--ease), box-shadow 0.15s var(--ease), filter 0.15s;
+}
+.settings-fab:hover { transform: translateY(-1px); filter: brightness(1.03); }
+.settings-fab svg { width: 1.25rem; height: 1.25rem; }
+.settings-panel {
+  position: absolute; right: 0; bottom: calc(100% + 0.6rem);
+  width: min(320px, calc(100vw - 2rem));
+  background: var(--card); color: var(--text); border: 1px solid var(--border);
+  border-radius: var(--radius); box-shadow: var(--shadow-lg, var(--shadow-md)); overflow: hidden;
+}
+.settings-panel[hidden] { display: none; }
+.settings-panel__head {
+  display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;
+  padding: 0.7rem 0.75rem 0.6rem 0.9rem; border-bottom: 1px solid var(--border);
+}
+.settings-panel__head strong { font-size: 0.95rem; }
+.settings-panel__close { width: 2rem; height: 2rem; padding: 0; }
+.settings-panel__body { padding: 0.75rem 0.9rem 0.9rem; display: grid; gap: 0.8rem; }
+.settings-item__label { display: inline-flex; align-items: center; gap: 0.45rem; font-size: 0.88rem; font-weight: 600; margin-bottom: 0.45rem; color: var(--text); }
+.settings-item__label svg { width: 1rem; height: 1rem; color: var(--muted); }
+.settings-swatches { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+.settings-swatch {
+  width: 1.9rem; height: 1.9rem; border-radius: 999px; border: 1px solid var(--border);
+  background: var(--bg); cursor: pointer; display: grid; place-items: center; padding: 0;
+}
+.settings-swatch:hover { border-color: var(--muted); }
+.settings-swatch.is-active { outline: 2px solid var(--accent); outline-offset: 2px; border-color: transparent; }
+.settings-swatch__dot { width: 1.05rem; height: 1.05rem; border-radius: 999px; display: block; }
+.settings-swatch__dot--slate { background: #6366f1; }
+.settings-swatch__dot--forest { background: #22c55e; }
+.settings-swatch__dot--sunset { background: #f97316; }
+.settings-swatch__dot--violet { background: #8b5cf6; }
+.settings-swatch__dot--rose { background: #f43f5e; }
+.settings-swatch__dot--ocean { background: #06b6d4; }
+.settings-swatch__dot--mono { background: #64748b; }
+.settings-segments { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+.settings-segment {
+  border: 1px solid var(--border); background: var(--bg); color: var(--text);
+  border-radius: 999px; padding: 0.35rem 0.7rem; font: inherit; font-size: 0.85rem; cursor: pointer;
+}
+.settings-segment:hover { border-color: var(--muted); }
+.settings-segment.is-active { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+.settings-item--action { margin: 0; }
+.settings-action {
+  width: 100%; display: inline-flex; align-items: center; gap: 0.55rem; justify-content: flex-start;
+  border: 1px solid var(--border); background: var(--bg); color: var(--text);
+  border-radius: var(--radius-sm); padding: 0.55rem 0.7rem; font: inherit; font-size: 0.9rem; cursor: pointer; text-align: left;
+}
+.settings-action:hover:not(:disabled) { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--bg)); }
+.settings-action:disabled { opacity: 0.5; cursor: not-allowed; }
+.settings-action svg { width: 1rem; height: 1rem; color: var(--muted); flex: none; }
+.settings-muted { color: var(--muted); font-size: 0.85rem; }
+
+:root[data-style="flat"] .settings-fab,
+:root[data-style="flat"] .settings-panel,
+:root[data-style="flat"] .settings-swatch,
+:root[data-style="flat"] .settings-segment,
+:root[data-style="flat"] .settings-action { border-radius: 8px; }
+:root[data-style="flat"] .settings-fab,
+:root[data-style="flat"] .settings-swatch { border-radius: 999px; }
+
+@media (max-width: 620px) {
+  .settings-wrap { right: 0.8rem; bottom: 4.4rem; }
+  .settings-panel { width: min(320px, calc(100vw - 1.2rem)); }
+}
+
+
+/* =====================================================================
    22. RESPONSIVE  (phones & tablets)
    ===================================================================== */
 @media (max-width: 880px) {
@@ -900,24 +975,65 @@ textarea:focus-visible, [tabindex]:focus-visible {
 }
 
 /* =====================================================================
-   23. PRINT / RESUME STYLES  (File → Print to get a clean résumé)
+   23. PRINT / RESUME STYLES  (merge page sections into one PDF-ready flow)
    ---------------------------------------------------------------------
-   Hides the nav, toggles, animations & decorative bits; forces black on
-   white so the page prints as a tidy one-/two-page document. -->
+   Hides navigation/interactive chrome and linearizes content for
+   printing or "Save as PDF" (window.print()).
    ===================================================================== */
 @media print {
-  :root { --bg: #fff; --card: #fff; --text: #000; --muted: #333; --border: #bbb; }
-  .navbar, .dot-rail, .back-to-top, .scroll-hint, .skip-link, .guide, .scroll-progress,
+  @page { margin: 12mm; }
+
+  :root {
+    --bg: #fff; --card: #fff; --text: #000; --muted: #333; --border: #bbb;
+    color-scheme: light;
+  }
+
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt;
+    line-height: 1.45;
+  }
+
+  /* Hide non-content/interactive UI */
+  .navbar, .dot-rail, .back-to-top, .scroll-hint, .skip-link, .guide, .scroll-progress, .settings-wrap,
   .hero__cta, .nav-toggle, .contact-form, .footer__credit,
-  .cmdk, .cmdk-open, .toast, .projects__filters { display: none !important; }
-  .project[hidden] { display: flex !important; }   /* print every project, ignore any active filter */
-  body { font-size: 11pt; line-height: 1.4; }
-  .reveal { opacity: 1 !important; transform: none !important; }
-  .hero { padding-block: 0.5rem; }
-  .hero__grid { grid-template-columns: 1fr; gap: 1rem; }
-  .section { padding-block: 0.8rem; page-break-inside: avoid; border-top: 1px solid #ccc; }
-  .project, .now__item, .skills__group, .quote, .post, .glance, .contact__card { box-shadow: none !important; border: 1px solid #ccc; }
+  .cmdk, .cmdk-open, .toast, .projects__filters, .lightbox,
+  [data-copy-email] { display: none !important; }
+
+  /* Show all sections/content in one continuous flow */
+  main, #content, .container { width: auto !important; max-width: none !important; }
+  .project[hidden] { display: flex !important; } /* print every project, ignore active filter */
+  .reveal { opacity: 1 !important; transform: none !important; animation: none !important; }
+
+  .hero { padding-block: 0.5rem 0.75rem; background: none !important; }
+  .hero__grid, .about__grid { grid-template-columns: 1fr !important; gap: 0.75rem; }
+  .glance { max-width: none; }
+
+  .section {
+    padding-block: 0.7rem;
+    border-top: 1px solid #ccc;
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+  .section__head { margin-bottom: 0.5rem; }
+
+  /* Keep individual blocks/cards intact where possible */
+  .timeline__item, .project, .now__item, .skills__group, .quote, .post,
+  .glance, .contact__card, .stat, .gallery__item, .about__photo {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .project, .now__item, .skills__group, .quote, .post, .glance, .contact__card, .stat {
+    box-shadow: none !important;
+    border: 1px solid #ccc;
+  }
+
+  .gallery__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; }
+  .gallery__item img { max-height: 160px; object-fit: cover; }
+
   a { color: #000; text-decoration: underline; }
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #555; word-break: break-all; }
-  .project:hover, .post:hover { transform: none; }
+  a[href^="#"]::after, a[href^="mailto:"]::after, .navbar__brand::after { content: ""; }
+  .project:hover, .post:hover { transform: none !important; }
 }
