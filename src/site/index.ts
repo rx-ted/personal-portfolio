@@ -1,4 +1,5 @@
 import resumeData from '../data/resume.json';
+import { resolveTags } from './tag-links';
 
 export type Locale = 'en' | 'zh';
 
@@ -65,7 +66,16 @@ export function getSiteData(locale: Locale) {
     experience: l.experience || { intro: '', items: [] },
     education: l.education || { intro: '', items: [] },
     skills: l.skills || { intro: '', groups: [] },
-    projects: l.projects || { filters: true, intro: '', items: [] },
+    projects: (() => {
+      const p = l.projects || { filters: true, intro: '', items: [] };
+      return {
+        ...p,
+        items: (p.items || []).map((item: any) => ({
+          ...item,
+          tags: resolveTags(item.tags),
+        })),
+      };
+    })(),
     gallery: l.gallery || { intro: '', items: [] },
     writing: l.writing || { intro: '', items: [] },
     testimonials: l.testimonials || { intro: '', items: [] },

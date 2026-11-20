@@ -152,30 +152,40 @@ const RENDERERS: Record<string, (d: any) => string> = {
   skills: function (d) {
     return '<div class="skills__grid reveal">' + (d.groups || []).map(function (g: any) {
       return ('<div class="skills__group"><h3>' + esc(g.name) + '</h3><div class="skills__tags">' +
-        (g.items || []).map(function (i: any) { return '<span class="chip">' + esc(i) + "</span>"; }).join("") +
+        (g.items || []).map(function (i: any) {
+          var c = Math.floor(Math.random() * 8) + 1;
+          return '<span class="chip chip--c' + c + '">' + esc(i) + "</span>";
+        }).join("") +
         "</div></div>");
     }).join("") + "</div>";
   },
 
   projects: function (d) {
     const items = d.items || [];
+    const tagLabel = function (t: any): string {
+      return (t && typeof t === "object") ? String(t.label || t.name || "") : String(t || "");
+    };
+    const tagKey = function (t: any): string {
+      return tagLabel(t).toLowerCase();
+    };
 
     let filterBar = "";
     if (d.filters !== false) {
       const seen: Record<string, boolean> = {};
-      const uniqueTags: string[] = [];
+      const uniqueTags: any[] = [];
       items.forEach(function (p: any) {
         (p.tags || []).forEach(function (t: any) {
-          const key = String(t).toLowerCase();
-          if (!seen[key]) { seen[key] = true; uniqueTags.push(t); }
+          const key = tagKey(t);
+          if (key && !seen[key]) { seen[key] = true; uniqueTags.push(t); }
         });
       });
       if (uniqueTags.length > 1) {
         filterBar = '<div class="projects__filters reveal" role="group" aria-label="' + esc(UI.filterProjectsAria) + '">' +
           '<button class="filter-btn is-active" type="button" data-filter="*" aria-pressed="true">' + esc(UI.all) + '</button>' +
           uniqueTags.map(function (t) {
-            return '<button class="filter-btn" type="button" data-filter="' + esc(String(t).toLowerCase()) +
-              '" aria-pressed="false">' + esc(t) + "</button>";
+            const label = tagLabel(t);
+            return '<button class="filter-btn" type="button" data-filter="' + esc(tagKey(t)) +
+              '" aria-pressed="false">' + esc(label) + "</button>";
           }).join("") +
         "</div>";
       }
@@ -188,14 +198,23 @@ const RENDERERS: Record<string, (d: any) => string> = {
           return ('<a class="btn btn--ghost btn--small" href="' + esc(l.url) + '"' + extAttr(l.url) + ">" +
             esc(l.label) + (l.type === "source" ? icon("github") : icon("external-link")) + "</a>");
         }).join("");
-      const tagKeys = (p.tags || []).map(function (t: any) { return String(t).toLowerCase(); }).join("|");
+      const tagKeys = (p.tags || []).map(function (t: any) { return tagKey(t); }).join("|");
       return (
         '<article class="project ' + (p.featured ? "project--featured" : "") + '" data-tags="' + esc(tagKeys) + '">' +
           '<div class="project__media"><img src="' + esc(p.image || "assets/img/placeholder.svg") + '" alt="' + esc(p.title) + ' preview" loading="lazy"></div>' +
           '<div class="project__body">' +
             '<h3 class="project__title">' + esc(p.title) + "</h3>" +
             '<p class="project__desc">' + esc(p.description) + "</p>" +
-            (p.tags && p.tags.length ? '<div class="project__tags">' + p.tags.map(function (t: any) { return '<span class="tag">' + esc(t) + "</span>"; }).join("") + "</div>" : "") +
+            (p.tags && p.tags.length ? '<div class="project__tags">' + p.tags.map(function (t: any) {
+              var label = tagLabel(t);
+              var url = (t && typeof t === "object" && t.url) ? String(t.url) : ("https://www.google.com/search?q=" + encodeURIComponent(label));
+              var iconSvg = (t && typeof t === "object" && t.icon) ? String(t.icon) : "";
+              return '<a class="tag tag--link" href="' + esc(url) + '"' + extAttr(url) + '>' +
+                (iconSvg ? '<span class="tag__icon" aria-hidden="true">' + iconSvg + '</span>' : '') +
+                '<span class="tag__label">' + esc(label) + '</span>' +
+                '<span class="tag__external" aria-hidden="true">' + icon("external-link") + '</span>' +
+              "</a>";
+            }).join("") + "</div>" : "") +
             (linksHtml ? '<div class="project__links">' + linksHtml + "</div>" : "") +
           "</div>" +
         "</article>"

@@ -406,7 +406,7 @@
             "featured": true,
             "title": "Portfolio — 个人作品集网站",
             "description": "参考开源 Portfolio Starter Kit，将基于 HTML/CSS/JavaScript 的个人主页重构为 Astro + TypeScript 项目，部署于 Cloudflare Pages。",
-            "image": "/assets/img/project-3.svg",
+            "image": "https://picx.19981204.xyz/rest/2026/11/ozcr8nk.png",
             "tags": [
               "Astro",
               "TypeScript",
@@ -920,7 +920,7 @@
             "featured": true,
             "title": "Portfolio — Personal Website",
             "description": "Personal portfolio rebuilt from HTML/CSS/JS into an Astro + TypeScript project, deployed on Cloudflare Pages.",
-            "image": "/assets/img/project-3.svg",
+            "image": "https://picx.19981204.xyz/rest/2026/11/ozcr8nk.png",
             "tags": [
               "Astro",
               "TypeScript",
